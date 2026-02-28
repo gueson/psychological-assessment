@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://psychology-assessment.vercel.app/sitemap.xml
