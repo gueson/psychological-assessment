@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from 'next'
+import { Analytics } from '@vercel/analytics/react'
 import '../styles/globals.css'
 
 export const metadata: Metadata = {
@@ -7,7 +8,10 @@ export const metadata: Metadata = {
   keywords: '心理测评,人格测试,能力测试,职业兴趣测试,MBTI,大五人格,霍兰德测试,心理评估,心理测验,职业规划,人才选拔',
   authors: [{ name: '心理测评专家' }],
   icons: {
-    icon: '/favicon.ico',
+    icon: '/favicon.svg',
+  },
+  other: {
+    'google-site-verification': 'dSvyi8ugxh5gSyQK40vW2UI6EG_luAKTEf3793gGE6c',
   },
   openGraph: {
     title: '心理测评工具全解析',
@@ -53,6 +57,7 @@ export default function RootLayout({
     <html lang="zh-CN">
       <body>
         {children}
+        <Analytics />
       </body>
     </html>
   )
